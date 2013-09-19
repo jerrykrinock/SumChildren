@@ -11,7 +11,7 @@ The project has two entities in a parent/child relationship…
 - The parent has one decimal type attribute, parentSum
 
 The thing to learn from this project is the use of "business logic" code
-to satisfy the following requirments, which did not work in the previous commit.
+to satisfy the following requirments, which did not work originally.
 (The first requirement *looked* like it was working, but in fact model changes
 were not being saved to the store.)
 
