@@ -21,7 +21,7 @@
 		48098DD817EB423B00AE4E3B /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DD417EB423B00AE4E3B /* Child.m */; };
 		48098DD917EB423B00AE4E3B /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DD617EB423B00AE4E3B /* Parent.m */; };
 		48098DDC17EB428000AE4E3B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48098DDB17EB428000AE4E3B /* MainMenu.xib */; };
-		48098DDE17EB512A00AE4E3B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48098DDD17EB512A00AE4E3B /* README.md */; };
+		48F1216B17EBB4890079ADB0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48F1216A17EBB4890079ADB0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 		48098DD517EB423B00AE4E3B /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		48098DD617EB423B00AE4E3B /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		48098DDB17EB428000AE4E3B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		48098DDD17EB512A00AE4E3B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		48F1216A17EBB4890079ADB0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,7 @@
 		48098D8D17EB415D00AE4E3B = {
 			isa = PBXGroup;
 			children = (
+				48F1216A17EBB4890079ADB0 /* README.md */,
 				48098D9F17EB415D00AE4E3B /* SumChildren */,
 				48098DC017EB415D00AE4E3B /* SumChildrenTests */,
 				48098D9817EB415D00AE4E3B /* Frameworks */,
@@ -125,7 +126,6 @@
 		48098D9F17EB415D00AE4E3B /* SumChildren */ = {
 			isa = PBXGroup;
 			children = (
-				48098DDD17EB512A00AE4E3B /* README.md */,
 				48098DD317EB423B00AE4E3B /* Child.h */,
 				48098DD417EB423B00AE4E3B /* Child.m */,
 				48098DD517EB423B00AE4E3B /* Parent.h */,
@@ -249,7 +249,7 @@
 			files = (
 				48098DA417EB415D00AE4E3B /* InfoPlist.strings in Resources */,
 				48098DDC17EB428000AE4E3B /* MainMenu.xib in Resources */,
-				48098DDE17EB512A00AE4E3B /* README.md in Resources */,
+				48F1216B17EBB4890079ADB0 /* README.md in Resources */,
 				48098DB517EB415D00AE4E3B /* Images.xcassets in Resources */,
 				48098DAA17EB415D00AE4E3B /* Credits.rtf in Resources */,
 			);
@@ -477,6 +477,7 @@
 				48098DCC17EB415D00AE4E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48098DCD17EB415D00AE4E3B /* Build configuration list for PBXNativeTarget "SumChildrenTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +486,7 @@
 				48098DCF17EB415D00AE4E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

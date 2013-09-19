@@ -1,19 +1,41 @@
 SumChildren
-==========
+===========
 
-This is a demo OS X Core Data app that works except for two issues in updating dependent attributes.  See https://devforums.apple.com/message/892973#892973
+This is a demo OS X Core Data app that works.  Originally it two issues in updating
+dependent attributes.  See https://devforums.apple.com/message/892973#892973
 
-Project has two entities in a parent/child relationship…
+The project has two entities in a parent/child relationship…
  
 - Parent and child data are presented in separate table views.
 - The child object has 3 decimal type attributes: childOne, childTwo, childThree
 - The parent has one decimal type attribute, parentSum
+
+The thing to learn from this project is the use of "business logic" code
+to satisfy the following requirments, which did not work in the previous commit.
+(The first requirement *looked* like it was working, but in fact model changes
+were not being saved to the store.)
+
 - In each child, childThree = childOne * childTwo
 - In each parent, parentSum = the sum of all its children's childThree.
-- When the user modifies the value of childTwo in a cell, then its childThree, and it's parent's parentSum, should be updated in the table immediately.
- 
-The two issues are:
- 
-1. childThree is updated immediately but parentSum is not.  In order to have the modification taken into account, I need to leave the record in the table by selecting another one. Then I see the value updated. It's not a problem with refresh/reload the table, it is really a problem of when the value is updated.
- 
-2. Modified values are not saved in the SQLite file.
+
+In the first case, we solve the problem by using  custom setters in the
+implementation of Child.  In the second case, we use Key Value Observing (KVO)
+in the implementation of Parent.  Both strategies work, although KVO is easier
+for observing to-many relationships.
+
+This is a good illustration of how it is deceptively simple to write a simple
+Core Data app such as Apple's examples, but as soon as you start to throw
+in real-world requirements in a real app, the lines of code start to pile up
+quickly.  I still use Core Data, though, because it's not so hard once you've
+done it a few times, and I would rather write business logic than the Undo and
+Redo code which Core Data does quite nicely for you.
+
+One more thing.  Writing the business logic for this project was kind of painful
+and error-prone due to the lack of accessors.  One way to get accessors in a 
+real Core Data project is to use mogenerator:
+
+https://github.com/rentzsch/mogenerator
+
+The next thing I notice is that when you're running this project and create some
+entities, then quit and relqunch, the entities are displayed in a different,
+arbitrary order.  That's a whole 'nother can of worms :)
