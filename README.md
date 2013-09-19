@@ -18,10 +18,16 @@ were not being saved to the store.)
 - In each child, childThree = childOne * childTwo
 - In each parent, parentSum = the sum of all its children's childThree.
 
-In the first case, we solve the problem by using  custom setters in the
+In the first case, we solve the problem by using custom setters in the
 implementation of Child.  In the second case, we use Key Value Observing (KVO)
 in the implementation of Parent.  Both strategies work, although KVO is easier
 for observing to-many relationships.
+
+Oh, it would have taken much less code to implement the derived properties
+childThree and parentSum simply as methods which calculate them when needed,
+and not store them in the store.  However the project's author made it a
+requirement that they be in the store.  This is sometimes necessary for
+performance reasons.
 
 This is a good illustration of how it is deceptively simple to write a simple
 Core Data app such as Apple's examples, but as soon as you start to throw
