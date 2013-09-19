@@ -14,13 +14,7 @@
 
 @property (nonatomic, retain) NSDecimalNumber * parentSum;
 @property (nonatomic, retain) NSSet *myChildren;
-@end
 
-@interface Parent (CoreDataGeneratedAccessors)
-
-- (void)addMyChildrenObject:(NSManagedObject *)value;
-- (void)removeMyChildrenObject:(NSManagedObject *)value;
-- (void)addMyChildren:(NSSet *)values;
-- (void)removeMyChildren:(NSSet *)values;
+- (void)updateSum ;
 
 @end
