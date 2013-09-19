@@ -12,13 +12,16 @@
 		48098DA617EB415D00AE4E3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DA517EB415D00AE4E3B /* main.m */; };
 		48098DAA17EB415D00AE4E3B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 48098DA817EB415D00AE4E3B /* Credits.rtf */; };
 		48098DAD17EB415D00AE4E3B /* SCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DAC17EB415D00AE4E3B /* SCDAppDelegate.m */; };
-		48098DB017EB415D00AE4E3B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48098DAE17EB415D00AE4E3B /* MainMenu.xib */; };
-		48098DB317EB415D00AE4E3B /* SumChildren.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48098DB117EB415D00AE4E3B /* SumChildren.xcdatamodeld */; };
 		48098DB517EB415D00AE4E3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48098DB417EB415D00AE4E3B /* Images.xcassets */; };
 		48098DBC17EB415D00AE4E3B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48098DBB17EB415D00AE4E3B /* XCTest.framework */; };
 		48098DBD17EB415D00AE4E3B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48098D9917EB415D00AE4E3B /* Cocoa.framework */; };
 		48098DC517EB415D00AE4E3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48098DC317EB415D00AE4E3B /* InfoPlist.strings */; };
 		48098DC717EB415D00AE4E3B /* SumChildrenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DC617EB415D00AE4E3B /* SumChildrenTests.m */; };
+		48098DD217EB41FE00AE4E3B /* SumChildren.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48098DD017EB41FE00AE4E3B /* SumChildren.xcdatamodeld */; };
+		48098DD817EB423B00AE4E3B /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DD417EB423B00AE4E3B /* Child.m */; };
+		48098DD917EB423B00AE4E3B /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098DD617EB423B00AE4E3B /* Parent.m */; };
+		48098DDA17EB423B00AE4E3B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48098DD717EB423B00AE4E3B /* README.md */; };
+		48098DDC17EB428000AE4E3B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48098DDB17EB428000AE4E3B /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +47,19 @@
 		48098DA917EB415D00AE4E3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		48098DAB17EB415D00AE4E3B /* SCDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDAppDelegate.h; sourceTree = "<group>"; };
 		48098DAC17EB415D00AE4E3B /* SCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDAppDelegate.m; sourceTree = "<group>"; };
-		48098DAF17EB415D00AE4E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		48098DB217EB415D00AE4E3B /* SumChildren.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SumChildren.xcdatamodel; sourceTree = "<group>"; };
 		48098DB417EB415D00AE4E3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48098DBA17EB415D00AE4E3B /* SumChildrenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumChildrenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48098DBB17EB415D00AE4E3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		48098DC217EB415D00AE4E3B /* SumChildrenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SumChildrenTests-Info.plist"; sourceTree = "<group>"; };
 		48098DC417EB415D00AE4E3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48098DC617EB415D00AE4E3B /* SumChildrenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SumChildrenTests.m; sourceTree = "<group>"; };
+		48098DD117EB41FE00AE4E3B /* Children.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Children.xcdatamodel; sourceTree = "<group>"; };
+		48098DD317EB423B00AE4E3B /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		48098DD417EB423B00AE4E3B /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		48098DD517EB423B00AE4E3B /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
+		48098DD617EB423B00AE4E3B /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
+		48098DD717EB423B00AE4E3B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; wrapsLines = 1; };
+		48098DDB17EB428000AE4E3B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +125,16 @@
 		48098D9F17EB415D00AE4E3B /* SumChildren */ = {
 			isa = PBXGroup;
 			children = (
+				48098DD317EB423B00AE4E3B /* Child.h */,
+				48098DD417EB423B00AE4E3B /* Child.m */,
+				48098DD517EB423B00AE4E3B /* Parent.h */,
+				48098DD617EB423B00AE4E3B /* Parent.m */,
+				48098DD717EB423B00AE4E3B /* README.md */,
+				48098DDB17EB428000AE4E3B /* MainMenu.xib */,
 				48098DAB17EB415D00AE4E3B /* SCDAppDelegate.h */,
 				48098DAC17EB415D00AE4E3B /* SCDAppDelegate.m */,
-				48098DAE17EB415D00AE4E3B /* MainMenu.xib */,
+				48098DD017EB41FE00AE4E3B /* SumChildren.xcdatamodeld */,
 				48098DB417EB415D00AE4E3B /* Images.xcassets */,
-				48098DB117EB415D00AE4E3B /* SumChildren.xcdatamodeld */,
 				48098DA017EB415D00AE4E3B /* Supporting Files */,
 			);
 			path = SumChildren;
@@ -235,9 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48098DA417EB415D00AE4E3B /* InfoPlist.strings in Resources */,
+				48098DDC17EB428000AE4E3B /* MainMenu.xib in Resources */,
 				48098DB517EB415D00AE4E3B /* Images.xcassets in Resources */,
+				48098DDA17EB423B00AE4E3B /* README.md in Resources */,
 				48098DAA17EB415D00AE4E3B /* Credits.rtf in Resources */,
-				48098DB017EB415D00AE4E3B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48098DA617EB415D00AE4E3B /* main.m in Sources */,
-				48098DB317EB415D00AE4E3B /* SumChildren.xcdatamodeld in Sources */,
+				48098DD217EB41FE00AE4E3B /* SumChildren.xcdatamodeld in Sources */,
+				48098DD817EB423B00AE4E3B /* Child.m in Sources */,
 				48098DAD17EB415D00AE4E3B /* SCDAppDelegate.m in Sources */,
+				48098DD917EB423B00AE4E3B /* Parent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,14 +311,6 @@
 				48098DA917EB415D00AE4E3B /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		48098DAE17EB415D00AE4E3B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48098DAF17EB415D00AE4E3B /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		48098DC317EB415D00AE4E3B /* InfoPlist.strings */ = {
@@ -481,12 +489,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		48098DB117EB415D00AE4E3B /* SumChildren.xcdatamodeld */ = {
+		48098DD017EB41FE00AE4E3B /* SumChildren.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				48098DB217EB415D00AE4E3B /* SumChildren.xcdatamodel */,
+				48098DD117EB41FE00AE4E3B /* Children.xcdatamodel */,
 			);
-			currentVersion = 48098DB217EB415D00AE4E3B /* SumChildren.xcdatamodel */;
+			currentVersion = 48098DD117EB41FE00AE4E3B /* Children.xcdatamodel */;
 			path = SumChildren.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
